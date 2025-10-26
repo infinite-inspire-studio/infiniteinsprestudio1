@@ -1,0 +1,212 @@
+/* --- Global Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* --- Header & Nav Bar --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%; /* 20px ऊपर-नीचे, 5% बाएँ-दाएँ */
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+}
+.logo_cantainer{
+    margin-left: 1%;
+    margin-top: 1%;
+    height: 10px;
+}
+.infinite_home{
+    height: 100px;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: -50px;
+}
+nav ul {
+    list-style: none; /* बुलेट पॉइंट्स हटाता है */
+    display: flex;
+}
+
+nav li {
+    margin-left: 25px; /* लिंक्स के बीच में जगह */
+}
+
+nav a {
+    text-decoration: none; /* अंडरलाइन हटाता है */
+    color: #555555;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: color 0.3s ease; /* होवर इफ़ेक्ट */
+}
+
+nav a:hover {
+    color: #007bff; /* होवर करने पर रंग बदलता है */
+}
+
+.search-icon {
+    font-size: 1.1em;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    /* बैकग्राउंड इमेज और एक डार्क ओवरले ताकि टेक्स्ट पढ़ सकें */
+    /* अपनी इमेज का पाथ 'your-background-image.jpg' की जगह डालें */
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070');
+    
+    background-size: cover;
+    background-position: center;
+    height: 85vh; /* स्क्रीन की 85% ऊँचाई */
+    
+    /* टेक्स्ट को सेंटर में लाने के लिए */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff; /* टेक्स्ट का रंग */
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 800px; /* कंटेंट की चौड़ाई सीमित करना */
+}
+
+.hero-content h1 {
+    font-size: 3.5em; /* 3.5 गुना बड़ा */
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.15em;
+    margin-bottom: 15px;
+}
+
+/* आपकी इमेज के दो अलग-अलग टेक्स्ट के लिए */
+.hero-content .description {
+    font-style: italic;
+}
+
+.hero-content .mission {
+    font-weight: bold;
+}
+/* --- ग्लोबल स्टाइल्स --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* पेज का हल्का ग्रे बैकग्राउंड */
+}
+
+/* --- मेन सेक्शन --- */
+.services-section {
+    width: 90%;
+    max-width: 1200px; /* कंटेंट की अधिकतम चौड़ाई */
+    margin: 60px auto; /* पेज को सेंटर में लाना */
+}
+
+/* --- हेडर --- */
+.services-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.sub-heading {
+    color: #007bff; /* नीला टेक्स्ट */
+    font-size: 0.9em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.main-heading {
+    color: #343a40; /* डार्क ग्रे/ब्लू हेडिंग */
+    font-size: 2.5em;
+    margin-top: 5px;
+}
+
+.btn-discover {
+    background-color: #e60023; /* लाल बटन */
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 25px; /* गोल किनारे */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-discover:hover {
+    background-color: #c4001d; /* होवर पर थोड़ा डार्क */
+}
+
+/* --- सर्विसेज़ का ग्रिड --- */
+.services-grid {
+    display: grid;
+    /* 3 कॉलम का ग्रिड, हर कॉलम बराबर चौड़ाई का */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px; /* कार्ड्स के बीच में गैप */
+}
+
+/* --- सर्विस कार्ड --- */
+.service-card {
+    background-color: #ffffff;
+    border-radius: 20px; /* ज़्यादा गोल किनारे */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07); /* हल्का शैडो */
+    min-height: 160px; /* सभी कार्ड की ऊंचाई एक बराबर */
+    
+    /* टेक्स्ट को वर्टिकली और हॉरिजॉन्टली सेंटर करने के लिए */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* होवर पर कार्ड थोड़ा ऊपर उठेगा */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+    color: #e60023; /* लाल टेक्स्ट */
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 992px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr); /* टैबलेट पर 2 कॉलम */
+    }
+    .main-heading {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-header {
+        flex-direction: column; /* मोबाइल पर हेडर स्टैक हो जाएगा */
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .services-grid {
+        grid-template-columns: 1fr; /* मोबाइल पर 1 कॉलम */
+    }
+}

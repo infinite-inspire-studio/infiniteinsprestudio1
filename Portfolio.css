@@ -1,0 +1,318 @@
+/* --- ग्लोबल स्टाइल्स --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* स्मूथ स्क्रॉलिंग के लिए */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+section {
+    padding: 80px 5%; /* सभी सेक्शन्स के लिए कॉमन पैडिंग */
+    margin-top: 60px; /* फिक्स्ड हेडर के लिए जगह */
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+}
+
+/* --- 1. हेडर / नेवबार --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 5%;
+    position: fixed; /* हेडर को फिक्स करने के लिए */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #e60023; /* आपका लाल रंग */
+}
+
+.hamburger {
+    display: none; /* डेस्कटॉप पर छिपा हुआ */
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+}
+
+/* --- 2. होम सेक्शन (हीरो) --- */
+.hero-section {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1920x1080.png?text=Your+Best+Design') no-repeat center center/cover;
+    color: #ffffff;
+    margin-top: 0; /* पहला सेक्शन हेडर के नीचे से शुरू न हो */
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #e60023;
+    color: #ffffff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+    background-color: #c4001d;
+}
+
+/* --- 3. पोर्टफोलियो सेक्शन --- */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.portfolio-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.portfolio-item h3 {
+    font-size: 1.3em;
+    padding: 15px 20px 0 20px;
+}
+
+.portfolio-item p {
+    padding: 0 20px 15px 20px;
+    color: #777;
+}
+
+/* --- 4. About सेक्शन --- */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.about-image {
+    flex: 1;
+}
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 50%;
+}
+.about-text {
+    flex: 2;
+}
+
+/* --- 5. सर्विसेज़ सेक्शन --- */
+.services-section {
+    background-color: #ffffff;
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+.service-card {
+    border: 1px solid #ddd;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+.service-card:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.service-card h3 {
+    color: #e60023;
+}
+
+/* --- 6. कॉन्टैक्ट सेक्शन --- */
+.contact-container {
+    display: flex;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.contact-info {
+    flex: 1;
+    padding: 40px;
+    background: #fdfdfd;
+}
+.contact-info h2 {
+    text-align: left;
+    color: #e60023;
+}
+.info-item {
+    margin-top: 20px;
+}
+.info-item h4 {
+    color: #555;
+}
+.info-item a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contact-form {
+    flex: 1;
+    padding: 40px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.submit-btn {
+    background-color: #e60023;
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.submit-btn:hover {
+    background-color: #c4001d;
+}
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: none;
+}
+
+/* --- 7. फुटर --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #f4f4f4;
+    margin-top: 60px;
+}
+
+/* --- मोबाइल के लिए रेस्पॉन्सिव डिज़ाइन --- */
+@media (max-width: 768px) {
+    section {
+        padding: 60px 5%;
+    }
+    
+    .hamburger {
+        display: flex; /* मोबाइल पर हैमबर्गर दिखाना */
+    }
+    
+    .navbar {
+        position: absolute;
+        top: 65px; /* हेडर की ऊंचाई के नीचे */
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        /* मेनू को छिपाना */
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+    .navbar ul {
+        flex-direction: column; /* लिंक्स को वर्टीकल करना */
+        padding: 10px;
+    }
+    .navbar li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    /* JS से यह क्लास जोड़ने पर मेनू दिखेगा */
+    .navbar.active {
+        max-height: 300px; 
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+    .about-content, .contact-container {
+        flex-direction: column; /* कॉलम्स को स्टैक करना */
+    }
+    .about-image {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> आपका नाम - ग्राफिक डिज़ाइनर </title>
+    <link rel="stylesheet" href="Portfolio.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="#home">आपका LOGO</a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>क्रिएटिव डिज़ाइन जो ब्रांड्स बनाते हैं</h1>
+                <p>मैं [आपका नाम] हूँ, एक ग्राफिक डिज़ाइनर जो आपके आइडियाज़ को विज़ुअल लाइफ देता हूँ।</p>
+                <a href="#portfolio" class="cta-button">मेरा काम देखें</a>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <h2>मेरा काम (Portfolio)</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/600x400.png?text=Project+1" alt="प्रोजेक्ट 1">
+                    <h3>प्रोजेक्ट का नाम 1</h3>
+                    <p>लोगो डिज़ाइन / ब्रांडिंग</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/600x400.png?text=Project+2" alt="प्रोजेक्ट 2">
+                    <h3>प्रोजेक्ट का नाम 2</h3>
+                    <p>वेब डिज़ाइन</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/600x400.png?text=Project+3" alt="प्रोजेक्ट 3">
+                    <h3>प्रोजेक्ट का नाम 3</h3>
+                    <p>पैकेजिंग</p>
+                </div>
+                </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/400x400.png?text=आपकी+फोटो" alt="आपकी प्रोफाइल फोटो">
+                </div>
+                <div class="about-text">
+                    <h2>मेरे बारे में</h2>
+                    <p>नमस्ते! मैं [आपका नाम] हूँ। मुझे डिज़ाइन करना पसंद है क्योंकि... [यहाँ अपने बारे में 2-3 लाइनें लिखें। आपकी क्या खासियत है?]</p>
+                    <p>मैं Adobe Illustrator, Photoshop, और Figma जैसे टूल्स में माहिर हूँ।</p>
+                    <a href="#contact" class="cta-button">बात करें</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <h2>मेरी सेवाएं (Services)</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>लोगो और ब्रांडिंग</h3>
+                    <p>आपके ब्रांड के लिए एक यूनिक पहचान।</p>
+                </div>
+                <div class="service-card">
+                    <h3>वेब और ऐप (UI) डिज़ाइन</h3>
+                    <p>उपयोगकर्ता के अनुकूल डिजिटल अनुभव।</p>
+                </div>
+                <div class="service-card">
+                    <h3>सोशल मीडिया ग्राफिक्स</h3>
+                    <p>आकर्षक पोस्ट जो ध्यान खींचते हैं।</p>
+                </div>
+                <div class="service-card">
+                    <h3>पैकेजिंग डिज़ाइन</h3>
+                    <p>प्रोडक्ट पैकेजिंग जो आपकी सेल्स बढ़ाए।</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>चलिए बात करते हैं</h2>
+                    <p>क्या आपके पास कोई आईडिया है? मुझे अपने अगले प्रोजेक्ट के बारे में बताएं।</p>
+                    <div class="info-item">
+                        <h4>E-mail</h4>
+                        <a href="mailto:your.email@gmail.com">your.email@gmail.com</a>
+                    </div>
+                    <div class="info-item">
+                        <h4>Phone</h4>
+                        <a href="tel:+919876543210">+91 98765 43210</a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="portfolio-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                            <small class="error-message"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <small class="error-message"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                            <small class="error-message"></small>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 [आपका नाम]. सभी अधिकार सुरक्षित।</p>
+    </footer>
+
+    <script src="script.js">
+      document.addEventListener("DOMContentLoaded", function() {
+
+    // --- मोबाइल मेनू (हैमबर्गर) ---
+    const hamburger = document.getElementById("hamburger-menu");
+    const navbar = document.querySelector(".navbar");
+
+    hamburger.addEventListener("click", function() {
+        // 'active' क्लास को जोड़ना/हटाना
+        navbar.classList.toggle("active");
+    });
+
+    // मोबाइल पर लिंक क्लिक करने पर मेनू बंद करना
+    const navLinks = document.querySelectorAll(".navbar a");
+    navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            if (navbar.classList.contains("active")) {
+                navbar.classList.remove("active");
+            }
+        });
+    });
+
+    // --- कॉन्टैक्ट फॉर्म वैलिडेशन ---
+    const form = document.getElementById("portfolio-form");
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const message = document.getElementById("message");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault(); // फॉर्म को सबमिट होने से रोकें
+        let isValid = true;
+        clearErrors();
+
+        // 1. नाम चेक करें
+        if (name.value.trim() === "") {
+            showError(name, "Name is required.");
+            isValid = false;
+        }
+
+        // 2. ईमेल चेक करें
+        if (email.value.trim() === "") {
+            showError(email, "Email is required.");
+            isValid = false;
+        } else if (!isValidEmail(email.value.trim())) {
+            showError(email, "Please enter a valid email address.");
+            isValid = false;
+        }
+
+        // 3. मैसेज चेक करें
+        if (message.value.trim() === "") {
+            showError(message, "Message is required.");
+            isValid = false;
+        }
+
+        // अगर सब कुछ सही है
+        if (isValid) {
+            alert("Form submitted successfully!");
+            form.reset(); // फॉर्म को रीसेट करें
+        }
+    });
+
+    function showError(input, message) {
+        const formGroup = input.parentElement;
+        const errorDisplay = formGroup.querySelector(".error-message");
+        errorDisplay.innerText = message;
+        errorDisplay.style.display = "block";
+    }
+
+    function clearErrors() {
+        document.querySelectorAll(".error-message").forEach(msg => {
+            msg.style.display = "none";
+            msg.innerText = "";
+        });
+    }
+
+    function isValidEmail(email) {
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+    }
+
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+/* --- ग्लोबल स्टाइल्स --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* पेज का हल्का बैकग्राउंड */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* --- कॉन्टैक्ट सेक्शन --- */
+.contact-section {
+    display: flex;
+    width: 90%;
+    max-width: 1100px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* --- बायाँ कॉलम: जानकारी --- */
+.contact-info {
+    flex: 1; /* 50% चौड़ाई */
+    padding: 50px;
+    color: #e60023; /* सारा टेक्स्ट लाल */
+}
+
+.contact-info h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.contact-info h2 {
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.info-item .icon {
+    font-size: 2em;
+    margin-right: 15px;
+}
+
+.info-item h4 {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.info-item a {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e60023;
+    text-decoration: none;
+}
+
+/* --- दायाँ कॉलम: फॉर्म --- */
+.contact-form {
+    flex: 1; /* 50% चौड़ाई */
+    padding: 50px;
+    background-color: #fdfdfd;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-group textarea {
+    resize: vertical; /* यूज़र को सिर्फ वर्टिकली साइज़ बदलने दें */
+}
+
+.submit-btn {
+    background-color: #fff;
+    color: #e60023;
+    border: 2px solid #e60023; /* लाल बॉर्डर */
+    padding: 12px 30px;
+    border-radius: 30px; /* गोल बटन */
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #e60023;
+    color: #ffffff;
+}
+
+/* --- एरर मैसेज --- */
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: none; /* डिफ़ॉल्ट रूप से छिपा हुआ */
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column; /* मोबाइल पर कॉलम स्टैक हो जाएँगे */
+    }
+    .contact-info, .contact-form {
+        padding: 30px;
+    }
+}

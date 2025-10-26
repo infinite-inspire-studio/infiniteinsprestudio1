@@ -1,0 +1,175 @@
+/* --- ग्लोबल स्टाइल्स --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* पेज का हल्का ग्रे बैकग्राउंड */
+}
+
+/* --- सर्विसेज़ सेक्शन --- */
+.services-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
+.services-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.sub-heading {
+    color: #007bff;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-heading {
+    color: #343a40;
+    font-size: 2.5em;
+    margin-top: 5px;
+}
+
+.btn-discover {
+    background-color: #e60023;
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-discover:hover {
+    background-color: #c4001d;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.service-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+    min-height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    color: #e60023;
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+/* --- कॉन्टैक्ट फॉर्म सेक्शन --- */
+.contact-form-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 60px auto;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+}
+
+.contact-form-section form {
+    max-width: 700px; /* फॉर्म को सेक्शन के बीच में रखता है */
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #e60023; /* लाल लेबल */
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f8f9fa; /* इनपुट का हल्का बैकग्राउंड */
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-group {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.submit-btn {
+    background-color: #fff;
+    color: #e60023;
+    border: 2px solid #e60023; /* लाल बॉर्डर */
+    padding: 12px 35px;
+    border-radius: 30px; /* गोल बटन */
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #e60023;
+    color: #ffffff;
+}
+
+/* --- एरर मैसेज --- */
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: none; /* डिफ़ॉल्ट रूप से छिपा हुआ */
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 992px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr); /* टैबलेट पर 2 कॉलम */
+    }
+}
+
+@media (max-width: 768px) {
+    .services-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .services-grid {
+        grid-template-columns: 1fr; /* मोबाइल पर 1 कॉलम */
+    }
+    .contact-form-section {
+        padding: 30px;
+    }
+}
